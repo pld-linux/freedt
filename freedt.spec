@@ -1,5 +1,5 @@
 Summary:	freedt - a reimplementation of Dan Bernstein's daemontools
-Summary[p]:	freedt - reimplementacja daemontools Dana Bernsteina
+Summary(pl):	freedt - reimplementacja daemontools Dana Bernsteina
 Name:		freedt
 Version:	0.18
 Release:	1
@@ -11,6 +11,7 @@ Source2:	%{name}.sysconfig
 Source3:	%{name}.init
 URL:		http://offog.org/code/freedt.html
 Requires(post,preun):	/sbin/chkconfig
+Obsoletes:	daemontools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
