@@ -39,7 +39,7 @@ case "$1" in
 		# we can't get status report from background job
 		# but we can only do simple file check
 		if [ -w $SVSCAN_DIR ]; then
-			svscan $SVSCAN_DIR &
+			setsid svscan $SVSCAN_DIR </dev/null > /dev/null 2>&1 &
 			ok
 		else
 			fail
