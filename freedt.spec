@@ -2,13 +2,14 @@ Summary:	freedt - a reimplementation of Dan Bernstein's daemontools
 Summary(pl):	freedt - reimplementacja daemontools Dana Bernsteina
 Name:		freedt
 Version:	0.18
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking/Admin
 Source0:	http://offog.org/files/%{name}-%{version}.tar.gz
 # Source0-md5:	7751ecf870b58cb5d3725ca209339fe6
 Source2:	%{name}.sysconfig
 Source3:	%{name}.init
+Patch0:		%{name}-va.patch
 URL:		http://offog.org/code/freedt.html
 Requires(post,preun):	/sbin/chkconfig
 Obsoletes:	daemontools
@@ -34,6 +35,7 @@ wzd³u¿(???) linii recordio).
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure
