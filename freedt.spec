@@ -31,7 +31,7 @@ svok, svscan, svstat i recordio. Zawiera równie¿ dumblog (prosty
 zamiennik multiloga), mkservice (skrypt do automatycznego tworzenia
 katalogów dla us³ug), anonidentd (zapewniaj±c± anonimowo¶æ
 implementacjê identd) oraz ratelimit (filtr ograniczaj±cy pasmo
-wzd³u¿(???) linii recordio).
+dzia³aj±cy w recordio).
 
 %prep
 %setup -q
