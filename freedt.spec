@@ -1,4 +1,5 @@
-Summary:	freedt is a reimplementation of Dan Bernstein's daemontools
+Summary:	freedt - a reimplementation of Dan Bernstein's daemontools
+Summary[p]:	freedt - reimplementacja daemontools Dana Bernsteina
 Name:		freedt
 Version:	0.18
 Release:	1
@@ -13,7 +14,22 @@ Requires(post,preun):	/sbin/chkconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-freedt currently includes feature-equivalent replacements for argv0, envdir, envuidgid, setlock, setuidgid, softlimit, supervise, svc, svok, svscan, svstat and recordio. It also includes dumblog (a simple multilog replacement), mkservice (a script for automatically creating service directories), anonidentd (an anonimising identd implementation) and ratelimit (a bandwidth-limiting filter along the lines of recordio). All the tools include usage messages; for instance, do "ratelimit
+freedt currently includes feature-equivalent replacements for argv0,
+envdir, envuidgid, setlock, setuidgid, softlimit, supervise, svc,
+svok, svscan, svstat and recordio. It also includes dumblog (a simple
+multilog replacement), mkservice (a script for automatically creating
+service directories), anonidentd (an anonimising identd
+implementation) and ratelimit (a bandwidth-limiting filter along the
+lines of recordio).
+
+%description -l pl
+freedt aktualnie zawiera funkcjonalnie równowa¿ne zamienniki argv0,
+envdir, envuidgid, setlock, setuidgid, softlimit, supervise, svc,
+svok, svscan, svstat i recordio. Zawiera równie¿ dumblog (prosty
+zamiennik multiloga), mkservice (skrypt do automatycznego tworzenia
+katalogów dla us³ug), anonidentd (zapewniaj±c± anonimowo¶æ
+implementacjê identd) oraz ratelimit (filtr ograniczaj±cy pasmo
+wzd³u¿(???) linii recordio).
 
 %prep
 %setup -q
