@@ -1,12 +1,12 @@
 Summary:	freedt - a reimplementation of Dan Bernstein's daemontools
 Summary(pl):	freedt - reimplementacja daemontools Dana Bernsteina
 Name:		freedt
-Version:	0.20
+Version:	0.21
 Release:	1
 License:	GPL
 Group:		Networking/Admin
 Source0:	http://offog.org/files/%{name}-%{version}.tar.gz
-# Source0-md5:	a7c43bad36527a2623cc1e9dd2df800e
+# Source0-md5:	28484635b0e149d00b872b6b0d935683
 Source2:	%{name}.sysconfig
 Source3:	%{name}.init
 URL:		http://offog.org/code/freedt.html
