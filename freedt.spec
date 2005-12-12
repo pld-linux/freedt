@@ -75,4 +75,4 @@ fi
 %attr(755,root,root) %{_bindir}/*
 %attr(700,root,root) /var/lib/service
 %attr(754,root,root) /etc/rc.d/init.d/svscan
-%config(noreplace) %verify(not size mtime md5) /etc/sysconfig/svscan
+%config(noreplace) %verify(not md5 mtime size) /etc/sysconfig/svscan
