@@ -10,6 +10,8 @@ Source0:	http://offog.org/files/%{name}-%{version}.tar.gz
 Source2:	%{name}.sysconfig
 Source3:	%{name}.init
 URL:		http://offog.org/code/freedt.html
+BuildRequires:	rpmbuild(macros) >= 1.268
+Requires(post,preun):	rc-scripts
 Requires(post,preun):	/sbin/chkconfig
 Obsoletes:	daemontools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -55,17 +57,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 /sbin/chkconfig --add svscan
-if [ -f /var/lock/subsys/svscan ]; then
-	/etc/rc.d/init.d/svscan restart >&2
-else
-	echo "Execute \"/etc/rc.d/init.d/svscan start\" to start svscan daemon."
-fi
+%service svscan restart
 
 %preun
 if [ "$1" = "0" ]; then
-	if [ -f /var/lock/subsys/svscan ]; then
-		/etc/rc.d/init.d/svscan stop >&2
-	fi
+	%service svscan stop
 	/sbin/chkconfig --del svscan
 fi
 
