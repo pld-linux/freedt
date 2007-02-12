@@ -1,5 +1,5 @@
 Summary:	freedt - a reimplementation of Dan Bernstein's daemontools
-Summary(pl):	freedt - reimplementacja daemontools Dana Bernsteina
+Summary(pl.UTF-8):   freedt - reimplementacja daemontools Dana Bernsteina
 Name:		freedt
 Version:	0.21
 Release:	1
@@ -25,14 +25,14 @@ service directories), anonidentd (an anonimising identd
 implementation) and ratelimit (a bandwidth-limiting filter along the
 lines of recordio).
 
-%description -l pl
-freedt aktualnie zawiera funkcjonalnie równowa¿ne zamienniki argv0,
+%description -l pl.UTF-8
+freedt aktualnie zawiera funkcjonalnie rÃ³wnowaÅ¼ne zamienniki argv0,
 envdir, envuidgid, setlock, setuidgid, softlimit, supervise, svc,
-svok, svscan, svstat i recordio. Zawiera równie¿ dumblog (prosty
+svok, svscan, svstat i recordio. Zawiera rÃ³wnieÅ¼ dumblog (prosty
 zamiennik multiloga), mkservice (skrypt do automatycznego tworzenia
-katalogów dla us³ug), anonidentd (zapewniaj±c± anonimowo¶æ
-implementacjê identd) oraz ratelimit (filtr ograniczaj±cy pasmo
-dzia³aj±cy w recordio).
+katalogÃ³w dla usÅ‚ug), anonidentd (zapewniajÄ…cÄ… anonimowoÅ›Ä‡
+implementacjÄ™ identd) oraz ratelimit (filtr ograniczajÄ…cy pasmo
+dziaÅ‚ajÄ…cy w recordio).
 
 %prep
 %setup -q
