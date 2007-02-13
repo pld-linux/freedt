@@ -1,5 +1,5 @@
 Summary:	freedt - a reimplementation of Dan Bernstein's daemontools
-Summary(pl.UTF-8):   freedt - reimplementacja daemontools Dana Bernsteina
+Summary(pl.UTF-8):	freedt - reimplementacja daemontools Dana Bernsteina
 Name:		freedt
 Version:	0.21
 Release:	1
