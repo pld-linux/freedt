@@ -1,12 +1,12 @@
 Summary:	freedt - a reimplementation of Dan Bernstein's daemontools
 Summary(pl.UTF-8):	freedt - reimplementacja daemontools Dana Bernsteina
 Name:		freedt
-Version:	0.21
+Version:	23
 Release:	1
 License:	GPL
 Group:		Networking/Admin
 Source0:	http://offog.org/files/%{name}-%{version}.tar.gz
-# Source0-md5:	28484635b0e149d00b872b6b0d935683
+# Source0-md5:	0659566c5af36b8413713e6d90b48c35
 Source2:	%{name}.sysconfig
 Source3:	%{name}.init
 URL:		http://offog.org/code/freedt.html
@@ -49,8 +49,8 @@ install -d $RPM_BUILD_ROOT/etc/{rc.d/init.d,sysconfig} \
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE2} $RPM_BUILD_ROOT/etc/sysconfig/svscan
-install %{SOURCE3} $RPM_BUILD_ROOT/etc/rc.d/init.d/svscan
+cp -p %{SOURCE2} $RPM_BUILD_ROOT/etc/sysconfig/svscan
+cp -p %{SOURCE3} $RPM_BUILD_ROOT/etc/rc.d/init.d/svscan
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -67,7 +67,7 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog README
+%doc AUTHORS NEWS README
 %attr(755,root,root) %{_bindir}/*
 %attr(700,root,root) /var/lib/service
 %attr(754,root,root) /etc/rc.d/init.d/svscan
